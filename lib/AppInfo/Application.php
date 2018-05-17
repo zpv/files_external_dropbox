@@ -23,7 +23,7 @@
 
 namespace OCA\Files_external_dropbox\AppInfo;
 
-use OCP\Files_External\Lib\Config\IBackendProvider;
+use OCA\Files_External\Lib\Config\IBackendProvider;
 use OCA\Files_External\Service\BackendService;
 use OCP\AppFramework\App;
 

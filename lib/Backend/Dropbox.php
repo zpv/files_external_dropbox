@@ -23,10 +23,9 @@
 
 namespace OCA\Files_external_dropbox\Backend;
 
+use OCA\Files_External\Lib\Auth\AuthMechanism;
+use OCA\Files_External\Lib\Backend\Backend;
 use OCP\IL10N;
-use OCP\Files\External\Backend\Backend;
-use OCP\Files\External\DefinitionParameter;
-use OCP\Files\External\Auth\AuthMechanism;
 
 class Dropbox extends Backend {
 
@@ -44,7 +43,7 @@ class Dropbox extends Backend {
                 
             ])
             ->addAuthScheme(AuthMechanism::SCHEME_OAUTH2)
-            ->addCustomJs(['files_external_dropbox', 'dropbox'])
+            ->addCustomJs('../../files_external_dropbox/js/dropbox');
         ;
     }
 

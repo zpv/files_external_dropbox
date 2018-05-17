@@ -24,6 +24,7 @@
 namespace OCA\Files_external_dropbox\BackgroundJob;
 
 
+use OCA\Files_External\Lib\StorageConfig;
 use OCP\IConfig;
 use OCP\IDBConnection;
 use OCP\ILogger;
